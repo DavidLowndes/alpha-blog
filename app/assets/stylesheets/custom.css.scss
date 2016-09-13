@@ -1,4 +1,4 @@
-$navbar-default-bg: #CEE3F6;
+$navbar-default-bg: #9AB19B;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -6,6 +6,14 @@ $navbar-default-bg: #CEE3F6;
 
 body {
   background-color: #eee;
+}
+
+.navbar-default .navbar-brand {
+  color: #333;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #555;
 }
 
 #logo {

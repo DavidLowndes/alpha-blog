@@ -14,20 +14,3 @@
  *= require_self
  */
 
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  margin-top: 10px;
-  border-top: 1px solid;
-  padding-top: 10px;
-  text-align: center;
-  font-size: 0.9em;
-}

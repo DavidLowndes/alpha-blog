@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AlphaBlog</title>
+    <title>the α-blog</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,11 +9,12 @@
   </head>
 
   <body>
-    <%= render 'layouts/messages' %>    
-    <%= yield %>
+    <%= render 'layouts/navigation' %>
+    <%= render 'layouts/messages' %> 
+    <div class="container">   
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
   
-  <footer>
-    © David Lowndes, 2016
-  </footer>
 </html>

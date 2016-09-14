@@ -17,38 +17,12 @@ ul {
   margin: 0;
 }
 
-/* Buttons */
-
-.btn-lg {
-  font-size: 1.4em;
-}
-
-.btn-custom{
-  background-color: #9AB19B;
-  color: #445;
-  border-color: #223;
-}
-
-.btn-custom:hover {
-  background-color: darken(#9AB19B, 15%);
-}
-
-.btn-custom:active {
-  background-color: darken(#9AB19B, 30%);
-}
-
-/* Alerts */
-
-.alert {
-  margin-bottom: 0px;
-}
-
-.close {
-  align-items: center;
-}
-
 /* Navbar */
- 
+
+.navbar {
+  border-radius: 0px;
+}
+
 .navbar-default .navbar-brand {
   color: #333;
 }
@@ -60,10 +34,49 @@ ul {
 #logo {
   float: left;
   font-size: 1.7em;
-  //color: #FFF;
-  //text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
+}
+
+
+/* Buttons */
+
+.btn-lg {
+  font-size: 1.4em;
+}
+
+.btn-custom {
+  background-color: #9AB19B;
+  color: #445;
+  border-color: darken(#9AB19B, 30%);
+}
+
+.btn-custom:hover {
+  background-color: darken(#9AB19B, 15%);
+  color: #FFF;
+  
+}
+
+.btn-custom:active {
+  background-color: darken(#9AB19B, 30%);
+}
+
+.btn-warning {
+  color: #445;
+}
+
+.btn-danger {
+  color: #334;
+}
+
+/* Alerts */
+
+.alert {
+  margin-bottom: 0px;
+}
+
+.close {
+  align-items: center;
 }
 
 /* Home Page */
@@ -91,6 +104,18 @@ ul {
   padding: 5px;
 }
 
+/* Article Index */
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #223;
+}
+
+.article-body {
+  border-top: 1px solid #888;
+  padding: 10px 0px;
+}
 
 /* Show Article */
 
@@ -114,7 +139,7 @@ hr {
 /* Footer */
 
 footer {
-  margin-top: 60px;
+  margin-top: 30px;
   padding-top: 5px;
   border-top: 1px solid;
   color: #888;

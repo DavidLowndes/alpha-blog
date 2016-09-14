@@ -3,44 +3,18 @@ $navbar-default-bg: #9AB19B;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+/* Site-wide */
+ 
 body {
   background-color: #eee;
-}
-
-.navbar-default .navbar-brand {
-  color: #333;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: #555;
-}
-
-#logo {
-  float: left;
-  font-size: 1.7em;
-  //color: #FFF;
-  //text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: bold;
 }
 
 .center {
   text-align: center;
 }
 
-.jumbotron {
-  background-image: asset-url("geometric.jpg");
-  background-size: 100%;
-  //width: cover;
-  height: 300px;
-}
-
-.jumbotron h1 {
-  color: #223;
-  margin-bottom: 40px;
-  letter-spacing: -2px;
-  font-weight: bold;
+ul {
+  margin: 0;
 }
 
 .btn-lg {
@@ -58,6 +32,50 @@ body {
   background-color: darken(#9AB19B, 30%);
 }
 
+/* Alerts */
+
+.alert {
+  margin-bottom: 0px;
+}
+
+.close {
+  align-items: center;
+}
+
+/* Navbar */
+ 
+.navbar-default .navbar-brand {
+  color: #333;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #555;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  //color: #FFF;
+  //text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+/* Home Page */
+ 
+.jumbotron {
+  background-image: asset-url("geometric.jpg");
+  background-size: 100%;
+  //width: cover;
+  height: 300px;
+}
+
+.jumbotron h1 {
+  color: #223;
+  margin-bottom: 40px;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
 
 #homep {
   max-width:800px;
@@ -65,14 +83,13 @@ body {
   color: #555;
   text-align: justify;
   text-indent: 10px;
-  border-color: #555;
-  //border-style: solid;
-  //border-width: 1px 0px 0px 0px;
   padding: 5px;
 }
 
+/* Footer */
+
 footer {
-  margin-top: 45px;
+  margin-top: 60px;
   padding-top: 5px;
   border-top: 1px solid;
   color: #888;

@@ -17,18 +17,23 @@ ul {
   margin: 0;
 }
 
+/* Buttons */
+
 .btn-lg {
   font-size: 1.4em;
+}
+
+.btn-custom{
   background-color: #9AB19B;
   color: #445;
   border-color: #223;
 }
 
-.btn-lg:hover {
+.btn-custom:hover {
   background-color: darken(#9AB19B, 15%);
 }
 
-.btn-lg:active {
+.btn-custom:active {
   background-color: darken(#9AB19B, 30%);
 }
 
@@ -84,6 +89,26 @@ ul {
   text-align: justify;
   text-indent: 10px;
   padding: 5px;
+}
+
+
+/* Show Article */
+
+hr {
+  margin: 10px 0px;
+}
+
+.article-actions {
+  padding-top: 10px;
+  border-top: 1px solid #888;
+}
+
+.article-actions a {
+  margin-right: 5px;
+}
+
+.description {
+  margin-top: 0;
 }
 
 /* Footer */

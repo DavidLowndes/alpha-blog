@@ -17,6 +17,10 @@ ul {
   margin: 0;
 }
 
+.no-top-margin{
+  margin-top: 0px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -110,7 +114,7 @@ ul {
 .article-title {
   font-weight: bold;
   font-size: 1.5em;
-  color: #223;
+  //color: #223;
 }
 
 .article-body {
@@ -128,6 +132,7 @@ ul {
 
 hr {
   margin: 10px 0px;
+  border-color: #888;
 }
 
 .article-actions {
@@ -141,6 +146,13 @@ hr {
 
 .description {
   margin-top: 0;
+}
+
+/* User Index */
+
+.listing {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Footer */

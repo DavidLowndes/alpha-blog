@@ -21,6 +21,10 @@ ul {
   margin-top: 0px;
 }
 
+.well {
+  padding: 15px;
+}
+
 .well.well-lg {
   padding: 20px;
 }
@@ -53,7 +57,6 @@ ul.pagination {
   letter-spacing: -1px;
   font-weight: bold;
 }
-
 
 /* Buttons */
 
@@ -89,7 +92,7 @@ ul.pagination {
 /* Alerts/Flashes */
 
 .alert {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .close {
@@ -164,6 +167,14 @@ hr {
 .listing {
   list-style: none;
   padding-left: 0;
+}
+
+.listing li {
+  margin-bottom: 5px;
+}
+
+.listing li.last {
+  margin-bottom: 0px;
 }
 
 /* Footer */

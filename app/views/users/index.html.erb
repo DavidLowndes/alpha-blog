@@ -1,9 +1,10 @@
 <h1 class="center">All Users</h1>
 
-<% sorted_users = @users.sort {|a,b| b.articles.count <=> a.articles.count }  %>
+<!-- <% sorted_users = @users.sort {|a,b| b.articles.count <=> a.articles.count }  %> -->
 
 <div align="center">
-  <%= sorted_users.each do |user| %>
+  <%= will_paginate %>
+  <%= @users.each do |user| %>
     <ul class="listing">
       <div class="row">
         <div class="well col-md-4 col-md-offset-4">
@@ -16,4 +17,6 @@
       </div>
     </ul>
   <% end %>
+  <%= will_paginate %>
+  
 </div>

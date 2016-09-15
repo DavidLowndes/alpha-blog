@@ -6,7 +6,7 @@ $navbar-default-bg: #9AB19B;
 /* Site-wide */
  
 body {
-  background-color: #eee;
+  background-color: lighten(#9AB19B, 20%);
 }
 
 .center {
@@ -101,7 +101,7 @@ ul {
   margin: 0 auto;
   color: #555;
   text-align: justify;
-  text-indent: 10px;
+  text-indent: 30px;
   padding: 5px;
 }
 

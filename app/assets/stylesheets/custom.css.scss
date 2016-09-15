@@ -59,6 +59,7 @@ ul {
 
 .btn-custom:active {
   background-color: darken(#9AB19B, 30%);
+  color: #FFF;
 }
 
 .btn-warning {
@@ -117,6 +118,12 @@ ul {
   padding: 10px 0px;
 }
 
+.article-meta-details {
+  border-top: 1px solid #888;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
 /* Show Article */
 
 hr {
@@ -124,7 +131,7 @@ hr {
 }
 
 .article-actions {
-  padding-top: 10px;
+  padding-top: 5px;
   border-top: 1px solid #888;
 }
 

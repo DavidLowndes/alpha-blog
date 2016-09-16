@@ -17,6 +17,10 @@ ul {
   margin: 0;
 }
 
+h1, h2 {
+  margin: 10px 0px;
+}
+
 .no-top-margin{
   margin-top: 0px;
 }
@@ -41,6 +45,7 @@ ul.pagination {
 
 .navbar {
   border-radius: 0px;
+  margin-bottom: 10px;
 }
 
 .navbar-default .navbar-brand {
@@ -109,6 +114,7 @@ ul.pagination {
 }
 
 .jumbotron h1 {
+  margin-top: 20px;
   color: #223;
   margin-bottom: 40px;
   letter-spacing: -2px;

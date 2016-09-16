@@ -8,6 +8,9 @@
           <li class="article-title"><%= link_to user.username, user_path(user) %></li>
           <li><%= link_to gravatar_for(user), user_path(user) %></li>
           <li class="last"><small> <%= pluralize(user.articles.count, "article") %> </small></li>
+          <% if logged_in? && current_user.admin? %>
+            <li><%= link_to "Delete User", user_path(user), class: "btn btn-xs btn-danger", method: :delete, data: { confirm: 'This will delete the user and all their articles. Are you sure?' }%></li>
+          <% end %>
         </div>
       </div>
     </ul>

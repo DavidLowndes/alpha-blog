@@ -1,5 +1,8 @@
 <h2 class="center">- <%= @user.username %>'s Profile -</h2>
-<h5 align="center"><%= @user.email %></h5>
+<% if logged_in? && (@user == current_user || current_user.admin?) %>
+  <h5 align="center"><%= @user.email %></h5>
+<% end %>
+
 <div class="row">
   <div class="col-md-4 col-md-offset-4 center">
     <%= gravatar_for @user, size: 100 %>

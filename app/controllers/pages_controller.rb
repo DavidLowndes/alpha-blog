@@ -7,4 +7,14 @@ class PagesController < ApplicationController
   def about
   end
   
+  def deletewebsite
+    flash[:danger] = "Really?"
+    redirect_to root_path
+  end
+  
+  def mememode
+    flash[:info] = "Meme mode activated. Enjoy your memeing!"
+    redirect_to root_path
+  end
+  
 end

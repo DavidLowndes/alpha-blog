@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # Pages Controller
   root 'pages#home'
   get 'about', to: 'pages#about'
+  get 'deletewebsite', to: 'pages#deletewebsite'
+  get 'mememode', to: 'pages#mememode'
   
   #Sessions Controller
   get 'login', to: 'sessions#new'

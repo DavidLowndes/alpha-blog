@@ -21,12 +21,12 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><%= link_to 'New Article', new_article_path %></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Filler 1</a></li>
+              <li><a href="#">Filler 2</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">Filelr 3</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><%= link_to 'Activate MEME MODE', mememode_path %></li>
             </ul>
           <% end %>
         </li>
@@ -44,9 +44,10 @@
             <ul class="dropdown-menu">
               <li><%= link_to "View Profile", user_path(current_user) %></li>
               <li><%= link_to "Edit Profile", edit_user_path(current_user) %></li>
-              <li><a href="#">Something else here</a></li>
               <li role="separator" class="divider"></li>
               <li><%= link_to 'Log out', logout_path, method: :delete %></li>
+              <li role="separator" class="divider"></li>
+              <li><%= link_to 'Delete Website', deletewebsite_path %></li>
             </ul>
           </li>
         <% else %>

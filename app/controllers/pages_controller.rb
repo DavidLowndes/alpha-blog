@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   end
   
   def mememode
-    flash[:info] = "Meme mode activated. Enjoy your memeing!"
+    flash[:info] = "Meme mode activated. Be careful."
     redirect_to root_path
   end
   

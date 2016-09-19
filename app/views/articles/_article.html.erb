@@ -18,7 +18,7 @@
         </div>
         
         <% if article.categories.any? %>
-          <p>Categories: <%= render article.categories %></p>
+          <p align="center">Categories: <%= render article.categories %></p>
         <% end %>
         
         <% if logged_in? && (article.user == current_user || current_user.admin?) %>

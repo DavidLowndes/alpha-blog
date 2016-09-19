@@ -24,11 +24,23 @@
               <li><a href="#">Filler 1</a></li>
               <li><a href="#">Filler 2</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Filler 3</a></li>
-              <li role="separator" class="divider"></li>
               <li><%= link_to 'Activate MEME MODE', mememode_path %></li>
             </ul>
-          <% end %>
+          </li>
+        <% end %>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'All Categories', categories_path %></li>
+            <li role="separator" class="divider"></li>
+            <% Category.all.each do |category| %>
+              <li><%= link_to "#{category.name}", category_path(category) %></li>
+            <% end %>
+            <% if logged_in? && current_user.admin? %>
+              <li role="separator" class="divider"></li>
+              <li><%= link_to "Create Category", new_category_path %></li>
+            <% end %>
+          </ul>
         </li>
       </ul>
       <form class="navbar-form navbar-left">
